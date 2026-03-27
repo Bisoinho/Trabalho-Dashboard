@@ -5,7 +5,7 @@
         <li><a href="cad-usuarios.php"><i class="fa-solid fa-user-plus"></i> Cadastrar</a></li>
         <li><a href="postagens.php"><i class="fa-regular fa-pen-to-square"></i> Postagens</a></li>
         <li><a href="categorias.php"><i class="fa-solid fa-list"></i> Categorias</a></li>
-        <li><a href="index.php"><i class="fa-solid fa-door-open"></i> Sair </a></li>
+        <a href="logout.php"><i class="fa-solid fa-right-from-bracket"></i> Sair </a>
         
     </ul>
 
