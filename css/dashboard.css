@@ -1,0 +1,327 @@
+/* ========== LAYOUT PRINCIPAL ========== */
+.dashboard-wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+}
+
+.dashboard-sidebar {
+    background: rgba(24, 24, 40, 0.95);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(12px);
+}
+
+.dashboard-main {
+    grid-column: 2;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+/* ========== MENU LATERAL ========== */
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 12px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    color: #d6d6f5;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.menu a i {
+    font-size: 18px;
+    width: 20px;
+}
+
+.menu a:hover,
+.menu a.active {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    transform: translateX(5px);
+}
+
+/* ========== HEADER DO DASHBOARD ========== */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.dashboard-header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+.header-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.user-name {
+    font-weight: 600;
+    color: white;
+    font-size: 0.95rem;
+}
+
+.user-role {
+    font-size: 0.85rem;
+    color: #a9a9cc;
+}
+
+.logout-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+}
+
+/* ========== CARDS E CONTAINERS ========== */
+.card {
+    background: rgba(24, 24, 40, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    border-color: rgba(122, 58, 237, 0.3);
+    box-shadow: 0 10px 30px rgba(106, 17, 203, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-header h2 {
+    font-size: 1.4rem;
+}
+
+.card-body {
+    color: #d6d6f5;
+}
+
+/* ========== TABELAS ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: rgba(106, 17, 203, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+th {
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #b9a8ff;
+}
+
+td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #d6d6f5;
+}
+
+tbody tr {
+    transition: 0.3s ease;
+}
+
+tbody tr:hover {
+    background: rgba(106, 17, 203, 0.08);
+}
+
+/* ========== GRID DE CARDS ========== */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: rgba(24, 24, 40, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: rgba(122, 58, 237, 0.3);
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    color: #a9a9cc;
+}
+
+/* ========== ALERTS ========== */
+.alert {
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.alert-success {
+    background: rgba(6, 214, 160, 0.15);
+    border: 1px solid rgba(6, 214, 160, 0.35);
+    color: #a7f3d0;
+}
+
+.alert-error {
+    background: rgba(255, 77, 109, 0.15);
+    border: 1px solid rgba(255, 77, 109, 0.35);
+    color: #ffd7df;
+}
+
+.alert-warning {
+    background: rgba(255, 214, 10, 0.15);
+    border: 1px solid rgba(255, 214, 10, 0.35);
+    color: #fef3c7;
+}
+
+.alert-info {
+    background: rgba(37, 117, 252, 0.15);
+    border: 1px solid rgba(37, 117, 252, 0.35);
+    color: #bfdbfe;
+}
+
+.alert i {
+    font-size: 18px;
+}
+
+/* ========== FORMS ========== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.form-actions button {
+    flex: 1;
+}
+
+/* ========== PAGINAÇÃO ========== */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.pagination a,
+.pagination span {
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: #b9a8ff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.pagination a:hover {
+    background: rgba(106, 17, 203, 0.2);
+    border-color: rgba(122, 58, 237, 0.5);
+}
+
+.pagination .active {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border-color: transparent;
+    color: white;
+}
+
+.pagination .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

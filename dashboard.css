@@ -1,0 +1,411 @@
+/* ===== Reset e Corpo ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.pagina {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== Dashboard Container ===== */
+.dashboard-container {
+    display: flex;
+    flex: 1;
+    min-height: calc(100vh - 60px);
+}
+
+/* ===== Menu lateral ===== */
+nav {
+    width: 220px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #141e30, #243b55);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style: none;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #ffffff;
+}
+
+/* ===== Perfil do usuário ===== */
+.perfil-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    padding-top: 20px;
+    border-top: 1px solid #6a11cb;
+    margin-top: auto;
+}
+
+.perfil-usuario img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ===== Conteúdo principal ===== */
+main {
+    flex: 1;
+    padding: 30px;
+    background: linear-gradient(135deg, #1a1a40, #1f3b73, #2a5298);
+}
+
+/* ===== Cabeçalho interno ===== */
+.header-content {
+    margin-bottom: 25px;
+}
+
+.header-content h2 {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* ===== Container de Cards ===== */
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* ===== Card individual ===== */
+.card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background: linear-gradient(135deg, #1e1e2f, #2d1b69);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(37, 117, 252, 0.35);
+}
+
+/* ===== Imagens dos Cards ===== */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* ===== Botão ===== */
+.card .btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card .btn:hover {
+    background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+    color: #ffffff;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: linear-gradient(90deg, #141e30, #243b55);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        min-height: auto;
+        position: static;
+    }
+
+    .perfil-usuario {
+        margin-top: 20px;
+        border-top: none;
+        padding-top: 10px;
+    }
+
+    .container-cards {
+        justify-content: center;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+/* ===== Container da Tabela ===== */
+.table-responsive {
+    background-color: #1e1e2f;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ===== Cabeçalho Profissional ===== */
+th {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    padding: 15px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* ===== Células de Dados ===== */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #3b3b5a;
+    font-size: 14px;
+    color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #25253a;
+}
+
+tbody tr:hover {
+    background-color: #2f2f52;
+}
+
+.btn-icon {
+    background: none;
+    border: none;
+    color: #66a3ff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-icon:hover {
+    color: #c084fc;
+}
+
+/* ===== Badges ===== */
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge.ativo {
+    background-color: #1f8f5f;
+    color: #eafff5;
+}
+
+.badge.inativo {
+    background-color: #7a1f3d;
+    color: #ffe8f0;
+}
+
+/* ===== Formatação do formulário ===== */
+.card-form {
+    background: linear-gradient(135deg, #1e1e2f, #2d1b69);
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    color: #ffffff;
+}
+
+.form-header {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #4a4a70;
+    padding-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #5b5b8a;
+    border-radius: 6px;
+    transition: 0.3s;
+    background-color: #161625;
+    color: #ffffff;
+}
+
+input:focus,
+select:focus {
+    border-color: #6a11cb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(106, 17, 203, 0.25);
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-save {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-save:hover {
+    background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+}
+
+.btn-cancel {
+    background: linear-gradient(90deg, #4b2a7b, #1f4fa3);
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-cancel:hover {
+    background: linear-gradient(90deg, #5a35a0, #2c67d8);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Botão adicionar */
+.btn-add {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-add:hover {
+    transform: translateY(-2px);
+}
+
+/* Thumbnail da tabela */
+.thumb {
+    width: 60px;
+    border-radius: 8px;
+}
+
+/* Botões */
+.btn-icon {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    margin: 0 4px;
+    font-size: 16px;
+}
+
+.btn-icon:hover {
+    color: #fff;
+}
+
+.btn-icon.delete:hover {
+    color: #ff4d6d;
+}
+
+/* Badge */
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ativo {
+    background: #1db954;
+}
+
+.inativo {
+    background: #ff4d6d;
+}

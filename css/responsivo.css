@@ -1,0 +1,333 @@
+/* ========== TABLETS (768px e abaixo) ========== */
+@media (max-width: 768px) {
+    /* Login */
+    .login-box {
+        padding: 30px 22px;
+        border-radius: 20px;
+        max-width: 100%;
+    }
+
+    .topo-login h1 {
+        font-size: 1.7rem;
+    }
+
+    .opcoes-login {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Dashboard */
+    .dashboard-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 15px;
+    }
+
+    .dashboard-main {
+        grid-column: 1;
+        padding: 20px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+
+    .menu li {
+        margin-bottom: 0;
+        min-width: max-content;
+    }
+
+    .menu a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px 12px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        flex: auto;
+    }
+}
+
+/* ========== SMARTPHONES (480px e abaixo) ========== */
+@media (max-width: 480px) {
+    /* Tipografia */
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    h3 { font-size: 1.1rem; }
+
+    /* Login */
+    body.login-page {
+        padding: 15px;
+    }
+
+    .login-box {
+        padding: 24px 16px;
+        border-radius: 16px;
+    }
+
+    .topo-login {
+        margin-bottom: 20px;
+    }
+
+    .icone-login {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icone-login i {
+        font-size: 24px;
+    }
+
+    .topo-login h1 {
+        font-size: 1.5rem;
+        margin-bottom: 6px;
+    }
+
+    .subtitulo {
+        font-size: 0.9rem;
+    }
+
+    .input-group {
+        margin-bottom: 16px;
+    }
+
+    .input-group label {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .input-box {
+        padding: 0 10px;
+    }
+
+    .input-box i {
+        font-size: 14px;
+    }
+
+    .input-box input {
+        padding: 12px 0;
+        font-size: 0.95rem;
+    }
+
+    .opcoes-login {
+        margin-bottom: 16px;
+        font-size: 0.85rem;
+    }
+
+    .rodape-login {
+        font-size: 0.8rem;
+        margin-top: 16px;
+    }
+
+    /* Dashboard */
+    .dashboard-sidebar {
+        padding: 12px;
+    }
+
+    .menu a {
+        padding: 10px 8px;
+        font-size: 0.85rem;
+    }
+
+    .menu a i {
+        font-size: 16px;
+    }
+
+    .dashboard-main {
+        padding: 15px;
+    }
+
+    .dashboard-header {
+        margin-bottom: 20px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.3rem;
+    }
+
+    .header-user {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .user-avatar {
+        width: 35px;
+        height: 35px;
+        font-size: 0.85rem;
+    }
+
+    .user-name {
+        font-size: 0.9rem;
+    }
+
+    .user-role {
+        font-size: 0.8rem;
+    }
+
+    .logout-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
+    .card {
+        padding: 16px;
+        border-radius: 12px;
+    }
+
+    .card-header {
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+    }
+
+    .card-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .stat-icon {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .stat-value {
+        font-size: 1.7rem;
+        margin-bottom: 6px;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+    }
+
+    .form-actions {
+        gap: 8px;
+    }
+
+    .pagination {
+        gap: 4px;
+    }
+
+    .pagination a,
+    .pagination span {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+
+    .alert {
+        padding: 12px 16px;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    .alert i {
+        font-size: 16px;
+        min-width: 16px;
+    }
+}
+
+/* ========== MODO LANDSCAPE (800px width, 600px height) ========== */
+@media (max-width: 800px) and (max-height: 600px) {
+    .dashboard-sidebar {
+        max-height: 500px;
+    }
+
+    .menu {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .dashboard-header {
+        flex-wrap: wrap;
+    }
+}
+
+/* ========== IMPRESSORA ========== */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .dashboard-sidebar,
+    .dashboard-header,
+    button,
+    .logout-btn {
+        display: none;
+    }
+
+    .card {
+        background: white;
+        border: 1px solid #ccc;
+        box-shadow: none;
+        page-break-inside: avoid;
+    }
+
+    table {
+        page-break-inside: avoid;
+    }
+}
